@@ -66,6 +66,7 @@ export default {
           }
         }
       },
+      
       beforeDestroy () {
         if (hasProxy) {
           let sockets = this.$options['sockets']
