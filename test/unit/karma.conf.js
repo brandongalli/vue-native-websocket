@@ -3,7 +3,6 @@ var webpackConfig = require('../../webpack.config.js')
 module.exports = function (config) {
   configuration = {
     browsers: [
-      //'Chrome'
       'ChromeHeadless'
     ],
     frameworks: [
@@ -32,7 +31,6 @@ module.exports = function (config) {
         flags: [
           '--headless',
           '--disable-gpu',
-          // Without a remote debugging port, Google Chrome exits immediately.
           '--remote-debugging-port=9222',
         ]
       }
